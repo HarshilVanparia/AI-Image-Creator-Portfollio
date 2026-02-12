@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghost | AI Image Creator Portfolio</title>
+  <link rel="icon" type="image/png" href="150.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Unbounded:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <canvas id="liquid-canvas" aria-hidden="true"></canvas>
+  <div class="loader" aria-live="polite">
+    <div class="loader-core loader-anime">
+      <span class="orbit orbit-main"></span>
+      <span class="orbit orbit-mid"></span>
+      <span class="orbit orbit-mini"></span>
+      <span class="spark spark-1"></span>
+      <span class="spark spark-2"></span>
+      <span class="spark spark-3"></span>
+    </div>
+  </div>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <img src="150.png" alt="Logo" class="brand-mark">
+        <div>
+          <p class="brand-title">Ghost </p>
+          <p class="brand-subtitle">AI Image Creator · Gemini Pro</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI Image Creator // Portfolio</p>
+          <h1>
+            I build production-grade AI visuals with repeatable prompts,
+            controlled style, and crisp delivery.
+          </h1>
+          <p class="lead">
+            Think of it as a visual pipeline: prompt design, refinement, and
+            final polish. Every set ships with consistency, traceable direction,
+            and a personal creative signature.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#work">Explore Work</a>
+            <a class="button ghost" href="#contact">Start a Project</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span>08</span>
+              <p>Collections</p>
+            </div>
+            <div>
+              <span>110+</span>
+              <p>Outputs</p>
+            </div>
+            <div>
+              <span>Gemini Pro</span>
+              <p>Canvas-first Flow</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-gallery">
+          <div class="prompt-reveal" tabindex="0" aria-label="Hover to render AI artwork">
+            <div class="prompt-bar" aria-hidden="true">
+              <span class="prompt-dot"></span>
+              <span class="prompt-dot"></span>
+              <span class="prompt-dot"></span>
+            </div>
+            <div class="prompt-scroll" aria-hidden="true">
+              <div class="prompt-track">
+                <div class="prompt-block">
+                  <p class="prompt-text">
+                   Ultra-realistic cinematic movie-style photo of a Dodge Challenger SRT Hellcat 
+                   in glossy black, full car visible front to rear. Slight wide-angle, 
+                   right-to-left cross view. Desert highway at sunrise with dramatic clouds, 
+                   sand dunes, and distant mountains. Golden sun backlighting the car, 
+                   long shadows across the road, cinematic dust drifting in the air, subtle 
+                   lens flare and heat haze. High-contrast film lighting with strong backlight, 
+                   soft sky fill, rim lighting outlining the body. Deep blacks, rich highlights, 
+                   anamorphic movie look. RAW automotive photography, HDR.
+                    <!-- <span class="prompt-cursor" aria-hidden="true">|</span> -->
+                  </p>
+                </div>
+                <div  aria-hidden="true">
+                  <p class="prompt-text">
+                   Ultra-realistic cinematic movie-style photo of a Dodge Challenger SRT Hellcat 
+                   in glossy black, full car visible front to rear. Slight wide-angle, 
+                   right-to-left cross view. Desert highway at sunrise with dramatic clouds, 
+                   sand dunes, and distant mountains. Golden sun backlighting the car, 
+                   long shadows across the road, cinematic dust drifting in the air, subtle 
+                   lens flare and heat haze. High-contrast film lighting with strong backlight, 
+                   soft sky fill, rim lighting outlining the body. Deep blacks, rich highlights, 
+                   anamorphic movie look. RAW automotive photography, HDR.
+                    <!-- <span class="prompt-cursor" aria-hidden="true">|</span> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img class="prompt-image" src="luxurious Cars/pro-gen.png" alt="AI artwork preview" />
+            <span class="prompt-wipe" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work-section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Work Showcase</p>
+            <h2>Collections engineered for visual consistency.</h2>
+          </div>
+          <p class="section-note">
+            Each series is tuned for color, lighting, and composition. Switch
+            tabs to see how the prompt stack holds up across variations.
+          </p>
+        </div>
+        <div class="work-metrics">
+          <div>
+            <span>Gemini Pro</span>
+            <p>Model + canvas pass</p>
+          </div>
+          <div>
+            <span>Curated Sets</span>
+            <p>Series-first output</p>
+          </div>
+          <div>
+            <span>Client Ready</span>
+            <p>Brief-aligned visuals</p>
+          </div>
+        </div>
+        <div class="tabs" role="tablist"></div>
+        <div class="gallery" aria-live="polite"></div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-card">
+          <h2>About Harshil V</h2>
+          <p>
+            I design prompt systems for consistent results, then polish outputs
+            with controlled lighting, tone mapping, and detail discipline.
+            The goal is reliable quality with a human creative signature.
+          </p>
+        </div>
+        <div class="about-card outline">
+          <h3>Capabilities</h3>
+          <ul>
+            <li>Prompt systems + style control</li>
+            <li>Product visualization</li>
+            <li>Series-ready collections</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Let us build together</p>
+            <h2>Contact</h2>
+             <p class="section-note " style="margin-top: 18px;">
+            Share your goal and style constraints. I will reply with a clear
+            visual direction and production plan.
+          </p>
+          </div>
+         
+        </div>
+        <div class="contact-grid">
+          <div class="contact-visual">
+            <img src="View/1769903805859.jpg" alt="" />
+          </div>
+          <form class="contact-form">
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@email.com" required />
+            </div>
+            <div class="field-group">
+              <label for="project">Project details</label>
+              <textarea id="project" rows="4" placeholder="Tell me about the project" required></textarea>
+            </div>
+            <button class="button" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright 2026 · Harshil V</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
