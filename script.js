@@ -4,11 +4,15 @@ const categories = [
     label: "Brand",
     folder: "Brand",
     images: [
-      "achet.png",
-      "bodywash.png",
       "product_brand_1772659556781.png",
       "product_brand_1772659840748.png",
       "product_brand_1772661826478.png",
+      "achet.png",
+      "dawe.png",
+      "bodywash.png",
+      "bengals.png",
+      "modelshot.png",
+      "luxury-cosmetic-product-photograph.png",
       "product_brand_1772662973568.png",
     ],
   },
@@ -320,3 +324,4 @@ const observer = new IntersectionObserver(
 );
 
 [...document.querySelectorAll("section")].forEach((section) => observer.observe(section));
+
