@@ -4,10 +4,10 @@ const categories = [
     label: "Brand",
     folder: "Brand",
     images: [
+      "product_brand_1772662973568.png",
       "dawe.png",
       "bengals.png",
       "modelshot.png",
-      "product_brand_1772662973568.png",
     ],
   },
     {
